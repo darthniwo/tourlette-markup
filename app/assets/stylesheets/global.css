@@ -51,7 +51,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 .media .body{
   overflow:hidden;
   margin-bottom:0;
-  padding:
+  padding-bottom:10px;
 }
 
 .push-top{margin-top:20px !important;}
@@ -201,7 +201,17 @@ section p.lead{width:90%;}
   border-radius: 50%;
 }
 
+.img.rounded img{
+  height:132px;
+  width:132px;
+}
+
 .tiny-feed .img.rounded{border:solid #CCC 5px;}
+
+.tiny-feed .img.rounded img{
+  height:65px;
+  width:65px;
+}
 
 .body.centered{padding-top:40px;}
 
@@ -450,7 +460,224 @@ section p.lead{width:90%;}
   margin-right:5px;
 }
 
+/* Map
+============================================================ */
 
+#map{
+  height:680px;
+  width:100%;
+}
+
+/*This is for markup only - remove if necessary*/
+#map iframe{
+  width:100%;
+}
+
+.v-island{
+  padding:20px 0;
+}
+
+.v-island-big{
+  padding:40px 0;
+}
+
+.copy-block{
+  display:inline-block;
+  margin:0 19px;
+  width:268px;
+  text-align:left;
+}
+
+#pic-site{
+  background:url('/assets/misc/pics-module-blur.jpg') repeat-x 0px 0px;
+  margin:0 auto;
+  height:760px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.pics-module{
+  background:url('/assets/misc/pics-module.jpg') no-repeat 0px 0px;
+  margin:0 auto;
+  height:760px;
+  position:relative;
+  width:1280px;
+}
+
+.pics-module .module{
+  background-color:#F5F5F5;
+  overflow:hidden;
+  width:630px;
+  padding:0 10px;
+  position: absolute;
+  left:50%;
+  height:760px;
+  margin-left:-328px;
+}
+
+.pics-module .module .item{
+  display:inline-block;
+  padding-top:15px;
+  width:630px;
+}
+
+.item{
+  position:absolute;
+}
+#item2{
+  left:650px;
+}
+
+.item hgroup h3{
+  font-size: 25px;
+  color:#1E1E1E;
+  font-weight: 300;
+  margin-bottom:0px;
+}
+
+.item hgroup h4{
+  font-size: 22px;
+  color:#FF2D43;
+  font-weight: 300;
+  margin-bottom:0px;
+}
+
+.item p.lead{
+  color:#666;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  width:420px; 
+}
+
+ul.route{clear:both;}
+
+ul.route .image{
+  border: solid #CCC 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+ul.route li{
+  float:left;
+  position:relative;
+  height:100px;
+  margin-right:25px;
+  width:100px;
+}
+
+ul.route li .arrow{
+  background: url('/assets/icons/arrow.png') no-repeat ;
+  height:23px;
+  position:absolute;
+  width:34px;
+  right:-17px;
+  top:40px;
+}
+
+ul.route li:last-child{margin-right:0;}
+
+ul.route li img,
+ul.route li .image{
+  height:87px;
+  width:87px;
+}
+
+.item .body{padding:0 40px 0 20px;}
+
+.place_info{
+  position: absolute;
+  background: #FFFFFF;
+  border: 1px solid #cccccc;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  padding:2px 5px;
+  width:130px;
+  top: -40px;
+  left: -20px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transition:opacity 0.2s linear;
+  -moz-transition:opacity 0.2s linear;
+  transition:opacity 0.2s linear;
+}
+
+ul.route li:hover .place_info{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+.place_info:after, .place_info:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.place_info:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #FFFFFF;
+  border-width: 10px;
+  left: 50%;
+  margin-left: -10px;
+}
+.place_info:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 50%;
+  margin-left: -11px;
+}
+
+.place_info .place{
+  font-size: 15px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color:#333;
+  display:block;
+  text-align: center;
+}
+
+.place_info .address{
+  font-size: 15px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color:#999;
+  display:block;
+  text-align: center;
+}
+
+.top-route{
+  background: url('/assets/icons/marker.png') no-repeat;
+  color:#1E1E1E;
+  font-size: 22px;
+  padding-left:20px;
+  display:block;
+  margin-bottom:20px;
+}
+
+.stars{width: 150px !important;}
+
+.item .next-btn{
+  background:url('/assets/icons/next-btn.png') no-repeat;
+  cursor:pointer;
+  position: absolute;
+  height: 37px;
+  right: 0;
+  top:365px;
+  width:37px;
+}
 
 /* Footer
 ============================================================ */
