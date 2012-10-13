@@ -2,7 +2,153 @@
   Tourlette - Profile
 <% end %>
 
-<h2>Hello World for no layout</h2>
+<div class="wrapper cf stripe">
+	<div class="main">
+		<div class="cf push-top">
+			<h1 id="logo" class="push"><a href="/"> <img src="<%= image_path('logo.png')%>" alt=""></a></h1>
+			<div class="title-head">
+				<span class="step-title right">Edit Profile</span>
+				<span class="number-bullet right">01</span>
+			</div>
+			<div class="sep clear"></div>
+			<section>
+				<div class="media cf push-top bigpush">
+					<div class="img rounded">
+						<img class="img-circle" src="<%= image_path('misc/user-pic1.jpg')%>" alt="">
+					</div>
+					<div class="body centered">
+						<span class="name">Manuel Perez</span>
+						<a href="mailto:manuel@gmail.com">manuel@gmail.com</a>
+					</div>
+				</div>
+				<div class="form-fields">
+					<img src="<%= image_path('misc/begin-baloon.png')%>" alt="" class="absolute-img">
+					<form action="">
+						<div class="field">
+							<input type="text" class="text" placeholder="First Name">
+						</div>
+						<div class="field">
+							<input type="text" class="text" placeholder="Last Name">
+						</div>
+						<div class="field">
+							<input type="text" class="text" placeholder="City">
+						</div>
+						<div class="field">
+							<input type="text" class="text" placeholder="Country">
+						</div>
+						<p class="lead">Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. </p>
+						<div class="sep"></div>
+						<div class="title-head">
+							<span class="number-bullet left">02</span>
+							<span class="step-title left">Add Your Preferences</span>
+						</div>
+						<div class="settings cf clear">
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons romance">Romance</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons adventure">Adventure</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons culture">Culture</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons shopping">Shopping</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons night-life">Night Life</span>
+							</div>
+							<div class="span3">
+								<input type="checkbox">
+								<span class="setting-icons local">Local Inmersion</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons family">Family</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons eco">Eco Friendly</span>
+							</div>
+							<div class="span2">
+								<input type="checkbox">
+								<span class="setting-icons fun">Fun</span>
+							</div>
+						</div>
+						<div class="sep clear bigpush"></div>
+						<input type="submit" class="btn-red bigpush" value="Next">
+					</form>
+				</div>
+			</section>
+
+		</div>
+		
+	</div>
+	<div class="sidebar">
+		<div class="fb-banner">
+			<div class="media">
+				<div class="img"><img src="<%= image_path('icons/fb-badge.png')%>" alt=""> </div>
+				<div class="body">
+					<p class="fb-copy">They're also using Tourlette</p>
+				</div>
+			</div>
+		</div>
+		<div class="tiny-feed">
+
+			<div class="media normal">
+				<div class="img rounded">
+					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+				</div>
+				<div class="body-visible arrow_box">
+					<div class="body-head">
+						<span class="like-icon"></span>
+						<span class="likes">9</span>
+						<span class="name">Pedro Fernandez</span>
+						<span class="date">12/23/12</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+				</div>
+			</div>
+
+			<div class="media inverse">
+				<div class="img rounded">
+					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+				</div>
+				<div class="body-visible arrow_box">
+					<div class="body-head">
+						<span class="like-icon"></span>
+						<span class="likes">9</span>
+						<span class="name">Pedro Fernandez</span>
+						<span class="date">12/23/12</span>
+					</div>
+					<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+				</div>
+			</div>
+
+			<div class="media normal">
+				<div class="img rounded">
+					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+				</div>
+				<div class="body-visible arrow_box">
+					<div class="body-head">
+						<span class="like-icon"></span>
+						<span class="likes">9</span>
+						<span class="name">Pedro Fernandez</span>
+						<span class="date">12/23/12</span>
+					</div>
+					<p> <img src="<%= image_path('misc/place-sample.png') %>" alt=""> </p>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
 
 <% content_for :javascript do %>
   <script>
