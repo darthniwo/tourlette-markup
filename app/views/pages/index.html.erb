@@ -1,13 +1,23 @@
 <% content_for :title do %>
-  Page Title
+  Tourlette
 <% end %>
 
-<div class="wrapper">
-	<h2>Hello Rumble</h2>
-	<span class="label label-important">Important</span>
-	<a href="" class="btn btn-primary"> this is a test for bootstrap</a>
-
-	
+<div class="landing-content">
+	<h1 id="logo"><a href="/"> <img src="<%= image_path('landing-logo.png')%>" alt=""></a></h1>
+	<h2>Start Now!</h2>
+  <p class="lead clear">Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Pro porro nonumy facilis ne, ea duo veri officiis efficiantur. Cu sea ancillae assentior</p>
+  <a href="" class="fb-btn"><span class="icon facebook"></span> Connect with Facebook</a>
+  <div id="myCarousel" class="carousel slide">
+	  <!-- Carousel items -->
+	  <div class="carousel-inner">
+	    <div class="active item"><img src="<%= image_path('misc/slide-img.jpg')%>" alt=""></div>
+	    <div class="item"> <img src="<%= image_path('misc/slide-img.jpg')%>" alt=""> </div>
+	    <div class="item"> <img src="<%= image_path('misc/slide-img.jpg')%>" alt=""> </div>
+	  </div>
+	  <!-- Carousel nav -->
+	  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
 </div>
 
 <% content_for :javascript do %>
