@@ -81,7 +81,8 @@
 							</div>
 						</div>
 						<div class="sep clear bigpush"></div>
-						<input type="submit" class="btn-red bigpush" value="Next">
+						<!-- <input type="submit" class="btn-red bigpush" value="Next"> -->
+						<a href="#step1" class="btn-red bigpush" role="button" data-toggle="modal">Next</a>
 					</form>
 				</div>
 			</section>
@@ -149,6 +150,24 @@
 		</div>
 	</div>
 </div>
+
+
+	<!-- Modal -->
+	<div class="modal" id="step1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	  <div class="modal-body aligncenter">
+	    <hgroup>
+	    	<h2>Step 1 Completed</h2>
+	    	<h3>(Register)</h3>
+	    </hgroup>
+	    <p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Pro porro nonumy</p>
+	    <img src="<%= image_path('misc/step1.png')%>" alt=""><br>
+	    <a href="" class="btn-red push-top">Done</a>
+	  </div>
+	  
+	</div>
+
+
 
 <% content_for :javascript do %>
   <script>

@@ -416,8 +416,39 @@ section p.lead{width:90%;}
   margin-top: -2px;
 }
 
+/* modal
+============================================================ */
 
+.modal{
+  border: solid #FF2F43 8px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
 
+.modal-body h2{
+  font-size: 28px;
+  font-weight: 300;
+  color:#FF2F43;
+  margin-bottom: 0px;
+}
+
+.modal-body h3{
+  font-size: 28px;
+  font-weight: 300;
+  color:#00A2A2;
+  margin-bottom:15px;
+}
+
+.modal-body p{
+  font-size: 18px;
+  color:#1E1E1E;
+  line-height: 1.2;
+}
+
+.modal .close{
+  margin-right:5px;
+}
 
 
 
@@ -513,9 +544,15 @@ input:-moz-placeholder{
   border-radius:5px;
   font-size: 22px;
   color:#FFF;
+  display:inline-block;
   text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
   font-weight: 400;
   padding:16px 30px;
+}
+
+a.btn-red:hover{
+  text-decoration: none;
+  color:#FFF;
 }
 
 /* Tablets
