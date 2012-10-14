@@ -1,0 +1,87 @@
+.presentation{margin: 0 auto -20px;}
+
+.presentation .content{
+	padding-top: 80px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+.presentation #logo{
+	display: block;
+	width: 100%;
+}
+
+.presentation h2{
+	font-size: 50px;
+	font-weight: inherit;
+
+}
+
+.presentation .lead{
+
+	padding-left: 251px;
+    padding-right: 251px;
+}
+
+
+.fb-btn .icon{
+	display: block;
+}
+
+.text-facebook{
+
+	color: #FFFFFF;
+    font-size: 32px;
+    left: 30px;
+    position: relative;
+    top: -58px;
+    z-index: 1;
+}
+
+.content-top{
+	background-color: #FAFAFA;
+	padding-bottom: 26px;
+	padding-top: 26px;
+
+}
+
+.airfare-icon{ float: left;
+	margin-left: 50px;
+	margin-right: 32px;
+}
+.airfare-lead{
+
+	color: #1E1E1E;
+	font-size: 35px;
+
+}
+
+
+.wrapper p.title{
+
+	color: #333333;
+    font-size: 35px;
+    font-weight: normal;
+    margin-left: 50px;
+
+}
+
+
+.wrapper .our-ventages .lead {
+	 background: url('/assets/icons/ok-btn.png') no-repeat ;
+    color: #262626;
+    cursor: pointer;
+    display: inline-block;
+     font-size: 20px;
+    line-height: 1.2em;
+    padding-left: 40px;}
+
+
+
+.copy-block-landing {
+    display: inline-block;
+    margin: 0 19px;
+    text-align: left;
+    width: 330px;
+}
