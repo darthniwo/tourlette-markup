@@ -36,11 +36,25 @@
 					<span class="arrow"></span>
 					<div class="close-icon"></div>
 				</li>
+				<li class="selected">
+					<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+					<span class="arrow"></span>
+					<div class="close-icon"></div>
+				</li>
+				<li class="selected">
+					<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+					<span class="arrow"></span>
+					<div class="close-icon"></div>
+				</li>
+				<li>
+					<a id="done" href="#step3" role="button" data-toggle="modal"><img src="<%= image_path('misc/done.png') %>" alt=""> </a>
+				</li>
 				
 			</ul>
 			<div id="suggested-places" class="cf">
 				
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -52,6 +66,7 @@
 				</div>
 
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -63,6 +78,7 @@
 				</div>
 
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -74,6 +90,7 @@
 				</div>
 
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -85,6 +102,7 @@
 				</div>
 
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -96,6 +114,7 @@
 				</div>
 
 				<div class="random-place">
+					<a class="added" href=""><img src="<%= image_path('misc/added.png') %>" alt=""> </a>
 					<div class="pic">
 						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
 					</div>
@@ -111,6 +130,22 @@
 	</div> <!-- end main-roulette -->
 </div>
 
+<!-- Modal -->
+	<div class="modal" id="step3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	  <div class="modal-body aligncenter">
+	    <hgroup>
+	    	<h2>Step 3 Completed</h2>
+	    	<h3>(Play Tourlette)</h3>
+	    </hgroup>
+	    <img src="<%= image_path('misc/step3.png')%>" alt=""><br>
+	    <p>Great, now give a name to your route:</p>
+	    <input type="text" class="text">
+	    <a href="" class="btn-red push-top">Go to Travel Activity</a>
+	  </div>
+	  
+	</div>
+
 
 <% content_for :javascript do %>
   <script>
@@ -122,6 +157,12 @@
     		$('#playground').removeClass('cover');
 
     	});
+
+    	$('label.add-place input').on('click', function(){
+    		console.log('click');
+    		$(this).parents('.random-place').toggleClass('selected');
+    	});
+
     });
   </script>
 <% end %>

@@ -787,6 +787,8 @@ ul.route li:hover .place_info{
   border:solid #00A2A2 8px;
 }
 
+.main-roulette .route li{margin-right:45px;}
+
 .main-roulette .route li.selected .arrow{
   background:url('/assets/icons/arrow-green.png') no-repeat;
 }
@@ -804,6 +806,11 @@ ul.route li:hover .place_info{
 .main-roulette .random-place .pic img{
   height:222px;
   width:300px;
+}
+
+ul.route li a img{
+  height:auto;
+  width: auto;
 }
 
 .main-roulette .random-place:nth-child(3n){margin-right:0;}
@@ -847,6 +854,11 @@ ul.route li:hover .place_info{
   width:0;
 }
 
+.main-roulette ul.route{
+  width:700px;
+  margin-left:100px;
+}
+
 .random-place .add-place span{
   background:url('/assets/icons/checks.png') no-repeat 35px -60px;
   display:inline-block;
@@ -856,6 +868,25 @@ ul.route li:hover .place_info{
 }
 
 .random-place .add-place input:checked + span{background-position:35px 0px}
+
+.random-place .added{
+  display:none;
+  position: absolute;
+  top: 80px;
+  left: 90px;
+}
+
+.random-place.selected .pic img{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
+}
+
+.random-place.selected .added{
+  display: block;
+}
 
 .play-holder img{
   position: relative;
@@ -898,6 +929,21 @@ ul.route li:hover .place_info{
   padding:2px;
   position: relative;
   top: 12px;
+}
+
+a, label{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none; 
+}
+
+#done{
+  display: inline-block;
+  margin-top: 30px;
 }
 
 /* Footer
