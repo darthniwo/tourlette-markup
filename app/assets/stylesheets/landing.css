@@ -24,6 +24,9 @@
     padding-right: 251px;
 }
 
+.fb-btn{
+  text-decoration: none;
+}
 
 .fb-btn .icon{
 	display: block;
