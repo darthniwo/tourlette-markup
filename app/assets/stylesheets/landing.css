@@ -24,6 +24,9 @@
     padding-right: 251px;
 }
 
+.fb-btn{
+  text-decoration: none;
+}
 
 .fb-btn .icon{
 	display: block;
@@ -95,7 +98,6 @@
     text-align: left;
     width: 330px;
 }
-
 
 .top-block-landing_1{
  	display: inline-block;
