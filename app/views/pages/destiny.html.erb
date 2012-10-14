@@ -90,69 +90,122 @@
 								<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
 							</li>
 						</ul>
-
+						
 					</div>
 				</div>
 			</div>
 			<div id="item2" class="item">
-				<div class="tiny-feed">
+				<div class="prev-btn"></div>
+				<div class="media">
+					<div class="img"><img src="<%= image_path('icons/top-marker.png') %>" alt=""></div>
+					<div class="body">
+						<span class="top-place">Best Places</span>
+						<ul class="mini-places cf push">
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+							<li><img src="<%= image_path('misc/mini-place-sample.png')%>" alt="Placename"></li>
+						</ul>
+						<span class="trip-tip clear">Journey Tips</span>
+						<div class="tiny-feed">
+							<div class="media normal">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
 
-			<div class="media normal">
-				<div class="img rounded">
-					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
-				</div>
-				<div class="body-visible arrow_box">
-					<div class="body-head">
-						<span class="like-icon"></span>
-						<span class="likes">9</span>
-						<span class="name">Pedro Fernandez</span>
-						<span class="date">12/23/12</span>
+							<div class="media inverse">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+							<div class="media normal">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+
+						</div> <!-- end of tiny feed -->
 					</div>
-					<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
 				</div>
-			</div>
-
-			<div class="media inverse">
-				<div class="img rounded">
-					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
-				</div>
-				<div class="body-visible arrow_box">
-					<div class="body-head">
-						<span class="like-icon"></span>
-						<span class="likes">9</span>
-						<span class="name">Pedro Fernandez</span>
-						<span class="date">12/23/12</span>
-					</div>
-					<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
-				</div>
-			</div>
-
-			<div class="media normal">
-				<div class="img rounded">
-					<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
-				</div>
-				<div class="body-visible arrow_box">
-					<div class="body-head">
-						<span class="like-icon"></span>
-						<span class="likes">9</span>
-						<span class="name">Pedro Fernandez</span>
-						<span class="date">12/23/12</span>
-					</div>
-					<p> <img src="<%= image_path('misc/place-sample.png') %>" alt=""> </p>
-				</div>
-			</div>
-
-
-		</div>
 			</div>
 		</div>
 	</div>
 </div>
+<p id="holder1" class="aligncenter push-top clear">
+	<a id="goto_city" href="#step2" class="btn-red" role="button" data-toggle="modal">Go to this city</a>
+	<img src="<%= image_path('misc/ready-to-start.png')%>" alt="">
+</p>
+<p class="aligncenter">
+	<img src="<%= image_path('misc/sponsors.png') %>" alt="">
+</p>
+
+<!-- Modal -->
+	<div class="modal" id="step2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	  <div class="modal-body aligncenter">
+	    <hgroup>
+	    	<h2>Step 2 Completed</h2>
+	    	<h3>(Select Place)</h3>
+	    </hgroup>
+	    <p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Pro porro nonumy</p>
+	    <img src="<%= image_path('misc/step2.png')%>" alt=""><br>
+	    <a href="" class="btn-red push-top">Done</a>
+	  </div>
+	  
+	</div>
 
 <% content_for :javascript do %>
   <script>
     $(function(){
+    	$('#item1 .next-btn').on('click', function(){
+    		$('#item1').animate({
+    			'left': '-640px'
+    		},500);
+    		$('#item2').animate({
+    			'left': '20px'
+    		},500);
+    	});
 
+    	$('#item2 .prev-btn').on('click', function(){
+    		$('#item2').animate({
+    			'left': '650px'
+    		},500);
+    		$('#item1').animate({
+    			'left': '10px'
+    		},500);
+    	});
     });
   </script>
 <% end %>

@@ -516,6 +516,7 @@ section p.lead{width:90%;}
   margin-left:-328px;
 }
 
+
 .pics-module .module .item{
   display:inline-block;
   padding-top:15px;
@@ -667,6 +668,12 @@ ul.route li:hover .place_info{
   margin-bottom:20px;
 }
 
+
+.mini-places li{
+  float:left;
+  margin-right:10px;
+}
+
 .stars{width: 150px !important;}
 
 .item .next-btn{
@@ -677,6 +684,54 @@ ul.route li:hover .place_info{
   right: 0;
   top:365px;
   width:37px;
+}
+
+.item .prev-btn{
+  background:url('/assets/icons/prev-btn.png') no-repeat;
+  cursor:pointer;
+  position: absolute;
+  height: 37px;
+  left: 0;
+  top:365px;
+  width:37px;
+}
+
+#goto_city{
+  position: relative;
+  top:-40px;
+}
+
+#item1 .media .body{height:760px;}
+#holder1{position: relative; width:200px;margin:0 auto; top:-60px;}
+#holder1 img{
+  position:absolute;
+  right:-200px;
+  top:0px;
+}
+
+#item2 .body-visible{
+  width:370px;
+}
+
+#item2 .body-visible p{width:340px;}
+#item2 .tiny-feed .media{margin-bottom: 25px;}
+
+.top-place{
+  background: url('/assets/icons/photo-icon.png') no-repeat 0px 4px;
+  color:#1E1E1E;
+  font-size: 22px;
+  padding-left:25px;
+  display:block;
+  margin-bottom:20px;
+}
+
+.trip-tip{
+  background: url('/assets/icons/tip-icon.png') no-repeat 0px 3px;
+  color:#1E1E1E;
+  font-size: 22px;
+  padding-left:22px;
+  display:block;
+  margin-bottom:20px;
 }
 
 /* Footer
