@@ -1,0 +1,65 @@
+<% content_for :title do %>
+  Tourlette - Play
+<% end %>
+
+<div id="playground" class="cover">
+	<div class="wrapper cf">
+		<h1 id="logo" class="push"><a href="/"> <img src="<%= image_path('logo.png')%>" alt=""></a></h1>
+		<div class="title-head">
+			<span class="step-title right">Play Tourlette</span>
+			<span class="number-bullet right">04</span>
+		</div>
+	</div>
+	<div class="intro-div aligncenter">
+		<h2>It's time to play</h2>
+		<p class="lead bigpush">
+			Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Pro porro nonumy facilis ne, ea duo veri officiis efficiantur. 
+		</p>
+		<a class="play-roulette"> <span>Play Tourlette</span> </a>
+	</div>
+	<div class="main-roulette">
+		<div class="wrapper">
+			<div class="play-action">
+				<a href="" class="play-btn"></a>
+			</div>
+			<ul class="route cf push">
+				<li>
+					<div class="image"><img class="img-circle" src="<%= image_path('misc/place-empty.png')%>" alt=""></div>
+					<span class="arrow"></span>
+				</li>
+				<li class="selected">
+					<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+					<span class="arrow"></span>
+					<div class="close-icon"></div>
+				</li>
+				
+			</ul>
+			<div id="suggested-places">
+				<div class="random-place">
+					<div class="pic">
+						<img src="<%= image_path('misc/random-place.jpg') %>" alt="">
+					</div>
+					<div class="rating"></div>
+					<span class="placename">Catedral</span>
+					<span class="placeaddress">Calle 76 No 54-180</span>
+					<span class="placemail">info@place.com</span>
+				</div>
+			</div>
+		</div>
+	</div> <!-- end main-roulette -->
+</div>
+
+
+<% content_for :javascript do %>
+  <script>
+    $(function(){
+    	$('.play-roulette').on('click', function(){
+    		$('#playground .intro-div').fadeOut('fast',function(){
+    			$('#playground .main-roulette').fadeIn();
+    		});
+    		$('#playground').removeClass('cover');
+
+    	});
+    });
+  </script>
+<% end %>
