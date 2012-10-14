@@ -44,6 +44,7 @@
 
 .content-top{
 	background-color: #FAFAFA;
+	height: 80px;
 	padding-bottom: 26px;
 	padding-top: 26px;
 
@@ -127,5 +128,43 @@
 .top-block-landing_3 h1{
 color: #FF2F43;
 font-size: 22px;
+
+}
+
+
+.v-island-big-landing {
+    padding: 55px 0 0;
+}
+
+
+.copy-block .lead{
+
+	text-align: justify;
+}
+
+.conter-block-landing{
+    text-align: center;
+
+}
+
+.conter-block-landing .wrapper{
+   	border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+
+}
+
+.conter-block-landing .lead{
+
+  	margin-left: 176px;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.step-img{
+   margin-bottom: 40px;
+   margin-top: 40px;
 
 }
