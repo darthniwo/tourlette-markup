@@ -1,0 +1,274 @@
+<% content_for :title do %>
+  Page Title
+<% end %>
+
+<div class="container dashboard-head push cf">
+	<h1 id="logo" class="push"><a href="/"> <img src="<%= image_path('logo.png')%>" alt=""></a></h1>
+	<div class="media right cf">
+		<div class="img rounded">
+			<img class="img-circle" src="<%= image_path('misc/user-pic1.jpg')%>" alt="">
+		</div>
+		<div class="body">
+			<span class="name">Manuel Perez</span>
+			<a href="mailto:manuel@gmail.com">manuel@gmail.com</a>
+			<div>
+				<a href="" class="logout"><img src="<%= image_path('icons/logout.png')%>" alt=""></a>
+				<a href="" class="edit"><img src="<%= image_path('icons/edit.png')%>" alt=""></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="dashboard">
+	<div class="container stripe2">
+		<div class="side-content">
+			<div class="aligncenter push">
+				<a href=""><img src="<%= image_path('icons/activity-btn.png')%>" alt=""></a>
+				<a href=""><img src="<%= image_path('icons/profile-btn.png')%>" alt=""></a>
+			</div>
+			<div class="media bordered push">
+				<div class="img">
+					<img src="<%= image_path('icons/profile-icon.png')%>" alt="">
+				</div>
+				<div class="body"><span class="title">My Profile</span> </div>
+			</div>
+			<div class="media cf user-info push">
+				<div class="img rounded">
+					<img class="img-circle" src="<%= image_path('misc/user-pic1.jpg')%>" alt="">
+				</div>
+				<div class="body">
+					<span class="name">Manuel Perez</span>
+					<a href="mailto:manuel@gmail.com">manuel@gmail.com</a>
+				</div>
+			</div>
+			<ul class="info">
+				<li>Manuel de Jesus</li>
+				<li>Perez Altamar</li>
+				<li>Barranquilla (Atlantico)</li>
+				<li>Colombia</li>
+			</ul>
+			<div class="media bordered push clear">
+				<div class="img">
+					<img src="<%= image_path('icons/preferences-icon.png')%>" alt="">
+				</div>
+				<div class="body"><span class="title">Travel Preferences</span> </div>
+			</div>
+			<div class="settings">
+				<ul>
+					<li><span class="setting-icons romance">Romance</span></li>
+					<li><span class="setting-icons adventure">Adventure</span></li>
+					<li><span class="setting-icons culture">Culture</span></li>
+					<li><span class="setting-icons local-inmersion">Local Inmersion</span></li>
+				</ul>
+				
+				
+				
+			</div>
+		</div>
+		<div class="main-content">
+			<h4 id="principal-routes" class="left">My Routes</h4>
+			<a href="" class="right push"><img src="<%= image_path('icons/start-route.png') %>" alt=""></a>
+			<div class="sep clearall"></div>
+			<div class="routes-feed main-roulette">
+
+				<div class="my-route">
+					<span class="name left">La sabrosonga</span>
+					<a href="" class="left push fb-share"><img src="<%= image_path('icons/fb-share.png') %>" alt=""></a>
+					<ul class="route cf push clear">
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+					</ul>
+
+
+					<div class="main-feed">
+						<a class="see-comments"><span class="textlabel">View comments</span> <span>3</span> </a>
+						<div class="tiny-feed">
+
+							<div class="media normal comment">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+							<div class="media inverse comment">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+							<div class="media normal checkin">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+
+								</div>
+							</div>
+
+
+						</div> <!-- end of tiny feed -->
+					</div> <!-- end main feed -->
+
+
+				</div>
+
+				
+				<div class="my-route">
+					<span class="name left">La sabrosonga</span>
+					<a href="" class="left push fb-share"><img src="<%= image_path('icons/fb-share.png') %>" alt=""></a>
+					<ul class="route cf push clear">
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+						<li class="selected">
+							<div class="image"><img class="img-circle" src="<%= image_path('misc/route-sample2.jpg')%>" alt=""></div>
+							<span class="arrow"></span>
+							<div class="place_info"><span class="place">Bocas de ceniza</span><span class="address">Calle 2, No. 32-21</span></div>
+						</li>
+					</ul>
+
+
+					<div class="main-feed">
+						<a class="see-comments"><span class="textlabel">View comments</span> <span>3</span> </a>
+						<div class="tiny-feed">
+
+							<div class="media normal comment">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+							<div class="media inverse comment">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+								</div>
+							</div>
+
+							<div class="media normal checkin">
+								<div class="img rounded">
+									<img class="img-circle" src="<%= image_path('misc/user-pic-tiny.jpg')%>" alt="">
+								</div>
+								<div class="body-visible arrow_box">
+									<div class="body-head">
+										<span class="like-icon"></span>
+										<span class="likes">9</span>
+										<span class="name">Pedro Fernandez</span>
+										<span class="date">12/23/12</span>
+									</div>
+									<p>Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex. Lorem ipsum dolor sit amet, platonem evertitur cum ex, quo decore commodo ex.</p>
+
+								</div>
+							</div>
+
+
+						</div> <!-- end of tiny feed -->
+					</div> <!-- end main feed -->
+
+
+				</div>
+
+				
+				
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<% content_for :javascript do %>
+  <script>
+    $(function(){
+    	$('.see-comments').on('click', function(){
+				var feed = $(this).parent().find('.tiny-feed');
+
+				if(feed.hasClass('open')){
+					$(this).find('.textlabel').text('View comments');
+					$(this).find('.textlabel').next().fadeIn();
+					feed.removeClass('open');
+					feed.slideUp();
+				}else{
+					$(this).find('.textlabel').text('Close');
+					$(this).find('.textlabel').next().fadeOut();
+					feed.addClass('open')
+    			feed.slideDown();
+				}
+    	});
+    });
+  </script>
+<% end %>

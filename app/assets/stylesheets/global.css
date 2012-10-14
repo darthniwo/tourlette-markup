@@ -30,7 +30,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 .media:after{clear:both;}
 
 .clear{clear:left;}
-
+.clearall{clear: both;}
 .left{float:left !important;}
 .right{float:right !important;}
 .center{
@@ -1071,6 +1071,80 @@ a, label{
 .main-feed .tiny-feed .checkin .body-visible .body-head{background: #FFF url('/assets/icons/type-checkin.png') no-repeat 6px 8px;}
 
 .main-feed .tiny-feed .body-visible p{width:490px;}
+
+.media.user-info .body .name,
+.media.user-info .body .name + a{
+  font-size: 20px;
+}
+
+.media.user-info{padding-left:10px;}
+
+.media.user-info .img.rounded img{
+  height:90px;
+  width:90px;
+}
+
+ul.info{
+  padding:0 10px;
+  margin-bottom:20px;
+}
+
+ul.info li{
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-bottom:5px;
+  border-bottom:dashed #CCC 1px;
+}
+
+ul.info li:last-child{border: 0 none;}
+
+.media.user-info .body{
+  padding-top: 30px;
+}
+
+
+.side-content ul li{
+  padding-left:5%;
+  width:44%;
+  float: left;
+}
+
+#principal-routes{
+  font-size: 25px;
+  color:#FF2E43;
+}
+
+.routes-feed.main-roulette ul.route{margin-left:0;}
+.fb-share.left{margin-left:20px;}
+
+.my-route .main-feed{
+  border-top:solid #CCC 1px;
+  margin-top:60px;
+}
+
+.my-route .main-feed .tiny-feed{display:none;}
+
+a.see-comments{
+  cursor:pointer;
+  background-color: #FFF;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  border:solid #CCC 1px;
+  display:block;
+  color:#666;
+  font-size: 16px;
+  font-weight: 400;
+  margin:0 auto;
+  width:170px;
+  padding:10px 20px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+
+a.see-comments:hover{text-decoration: none;}
+
 /* Footer
 ============================================================ */
 #footer{
