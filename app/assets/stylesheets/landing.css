@@ -15,11 +15,13 @@
 .presentation h2{
 	font-size: 50px;
 	font-weight: inherit;
-
+	color:#000;
+	text-shadow:0px 1px #FFF;
 }
 
 .presentation .lead{
-
+	color:#000;
+	text-shadow:0px 1px #FFF;
 	padding-left: 251px;
 	padding-right: 251px;
 }
@@ -161,10 +163,8 @@
 	}
 
 	.conter-block-landing .lead{
-
-		margin-left: 176px;
+		text-align: left !important;
 		margin-top: 20px;
-		width: 60%;
 	}
 
 	.step-img{
