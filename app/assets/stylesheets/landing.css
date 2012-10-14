@@ -177,3 +177,39 @@
 		margin-bottom: 40px;
 		margin-top: 30px;
 	}
+
+.title-head .img-circle {
+    border-radius: 500px 500px 500px 500px;
+}
+
+
+.title-head .img.rounded {
+    border: 8px solid #CCCCCC;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.title-head .img.rounded img {
+ 	height: 76px;
+    width: 76px;
+}
+
+.title-head .img {
+    float: left;
+    margin-right: 10px;
+}
+
+.title-head{
+	 margin-left: 520px;
+}
+
+.title-head .name{
+	 color: #1E1E1E;
+    display: block;
+    font-size: 16px;
+}
+
+
+.title-head .name + a {
+    color: #FF2F43;
+    font-size: 16px;
+}

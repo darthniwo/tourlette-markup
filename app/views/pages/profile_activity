@@ -1,0 +1,40 @@
+<% content_for :title do %>
+  Tourlette - Profile
+<% end %>
+
+<div class="wrapper">
+	<div class="wrapper">
+		<div class="cf push-top">
+			<h1 id="logo" class="push"><a href="/"> <img src="<%= image_path('logo.png')%>" alt=""></a></h1>
+			<div class="title-head">				
+					<div class="img rounded">
+						<img class="img-circle" src="<%= image_path('misc/user-pic1.jpg')%>" alt="">
+					</div>
+					<div class="body centered">
+						<span class="name">Manuel Perez</span>
+						<a href="mailto:manuel@gmail.com">manuel@gmail.com</a>	
+					</div>
+					<div class="body centered">
+						
+					</div>
+			
+			</div>
+			</div>
+		
+	</div>
+<section>			
+
+		
+	<div class="sidebar-left">	</div>
+
+</section>	
+
+</div>
+
+<% content_for :javascript do %>
+  <script>
+    $(function(){
+
+    });
+  </script>
+<% end %>
