@@ -1047,6 +1047,30 @@ a, label{
   margin-bottom:5px;
 }
 
+.desc .title{
+  display: block;
+  font-size: 18px;
+  color:#FF2F43;
+  font-weight:400; 
+}
+
+.main-feed{
+  width: 95%;
+  padding-top:20px;
+  margin: 0 auto;
+}
+
+.main-feed .tiny-feed .body-visible{
+  width:530px;
+  background-color: #F1F1F1;
+}
+
+.main-feed .tiny-feed .body-visible .body-head{background-color: #FFF;padding-left:45px;}
+
+.main-feed .tiny-feed .comment .body-visible .body-head{background: #FFF url('/assets/icons/type-comment.png') no-repeat 6px 8px;}
+.main-feed .tiny-feed .checkin .body-visible .body-head{background: #FFF url('/assets/icons/type-checkin.png') no-repeat 6px 8px;}
+
+.main-feed .tiny-feed .body-visible p{width:490px;}
 /* Footer
 ============================================================ */
 #footer{
