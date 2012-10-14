@@ -29,6 +29,14 @@ $(function(){
 		starOff : "icons/starOff.png"
 	});
 
+	$('.rating').raty({
+		readOnly : false,
+		score    : 2,
+		path: "/assets/",
+		starOn  : "icons/star-lite-On.png",
+		starOff : "icons/star-lite-Off.png"
+	});
+
 	//#Modernizr fallback for placeholder on ie
 	 if(!Modernizr.input.placeholder){
 		$('[placeholder]').focus(function() {

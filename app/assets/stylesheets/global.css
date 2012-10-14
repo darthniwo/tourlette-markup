@@ -796,9 +796,12 @@ ul.route li:hover .place_info{
   margin-right:10px;
   position: relative;
   width:300px;
+  float:left;
+  margin:0 15px 10px 0;
+  height:305px;
 }
 
-.main-roulette .random-place img{
+.main-roulette .random-place .pic img{
   height:222px;
   width:300px;
 }
@@ -818,6 +821,83 @@ ul.route li:hover .place_info{
   margin: 3px 0 0 15px;
   display: block;
   font-size: 15px;
+}
+
+.random-place .rating{
+  position: absolute;
+  right:0;
+  top:227px;
+}
+
+.random-place .add-place{
+  position:absolute;
+  right: 10px;
+  top: 255px;
+}
+
+.random-place .add-place{
+  cursor:pointer;
+}
+
+.random-place .add-place input{display:none;}
+
+.ie8 .random-place .add-place input{
+  display:inline;
+  filter:alpha(opacity=0);
+  width:0;
+}
+
+.random-place .add-place span{
+  background:url('/assets/icons/checks.png') no-repeat 35px -60px;
+  display:inline-block;
+  height:45px;
+  padding-right:50px;
+  line-height: 2.2;
+}
+
+.random-place .add-place input:checked + span{background-position:35px 0px}
+
+.play-holder img{
+  position: relative;
+  top: -70px;
+}
+
+.play-action .play-btn{
+  background-color:#E0E1DB;
+  height:135px;
+  width:135px;
+  display:block;
+  cursor: pointer;
+  margin:0 auto;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  -webkit-box-shadow:inset 1px -2px 1px rgba(153, 153, 153, 0.26), 0px 1px #FFF, 0px 5px 10px 2px rgba(150,150,150,0.5);
+  -moz-box-shadow:   inset 1px -2px 1px rgba(153, 153, 153, 0.26), 0px 1px #FFF, 0px 5px 10px 2px rgba(150,150,150,0.5);
+  box-shadow:        inset 1px -2px 1px rgba(153, 153, 153, 0.26), 0px 1px #FFF, 0px 5px 10px 2px rgba(150,150,150,0.5);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.play-btn:active{
+  -webkit-box-shadow: 1px -2px 1px rgba(153, 153, 153, 0.26), inset 0px 1px #FFF, 0px -5px 10px 2px rgba(150,150,150,0.5);
+  -moz-box-shadow:    1px -2px 1px rgba(153, 153, 153, 0.26), inset 0px 1px #FFF, 0px -5px 10px 2px rgba(150,150,150,0.5);
+  box-shadow:         1px -2px 1px rgba(153, 153, 153, 0.26), inset 0px 1px #FFF, 0px -5px 10px 2px rgba(150,150,150,0.5);
+}
+
+.play-btn span{
+  background: #D4D5CF url('/assets/icons/play-btn.png') no-repeat;
+  border:solid #FF2F43 12px;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  display: inline-block;
+  height:83px;
+  width:83px;
+  padding:2px;
+  position: relative;
+  top: 12px;
 }
 
 /* Footer
