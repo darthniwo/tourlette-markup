@@ -734,6 +734,92 @@ ul.route li:hover .place_info{
   margin-bottom:20px;
 }
 
+#playground{
+  background-color: #EFF1EA;
+  padding-top:50px;
+  min-height: 800px;
+}
+
+#playground.cover{
+  background: #EFF1EA url('/assets/misc/image_startroulette.jpg') no-repeat center top;
+  height:1000px;
+}
+
+#playground .intro-div h2{
+  color:#1E1E1E;
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  text-shadow:0px 1px #FFF;
+}
+
+#playground .intro-div p.lead{
+  color:#1E1E1E;
+  font-size: 25px;
+  margin:0 auto 20px;
+  text-shadow:0px 1px #FFF;
+  width: 530px;
+}
+
+#playground .main-roulette{
+  display:none;
+}
+
+
+.close-icon{
+  background:url('/assets/icons/close-icon.png') no-repeat;
+  height: 30px;
+  position:absolute;
+  width: 30px;
+  right: 0px;
+  top: -3px;
+  cursor: pointer;
+}
+
+/*.main-roulette .route{text-align: center;}
+
+.main-roulette .route li{
+  float:none;
+  display:inline-block;
+}*/
+
+.main-roulette .route li.selected .image{
+  border:solid #00A2A2 8px;
+}
+
+.main-roulette .route li.selected .arrow{
+  background:url('/assets/icons/arrow-green.png') no-repeat;
+}
+
+.main-roulette .random-place{
+  background-color:#FFF;
+  margin-right:10px;
+  position: relative;
+  width:300px;
+}
+
+.main-roulette .random-place img{
+  height:222px;
+  width:300px;
+}
+
+.main-roulette .random-place:nth-child(3n){margin-right:0;}
+
+.random-place .placename{
+  color:#1E1E1E;
+  margin: 3px 0 0 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.random-place .placemail,
+.random-place .placeaddress{
+  color:#666;
+  margin: 3px 0 0 15px;
+  display: block;
+  font-size: 15px;
+}
+
 /* Footer
 ============================================================ */
 #footer{
@@ -836,6 +922,38 @@ a.btn-red:hover{
   text-decoration: none;
   color:#FFF;
 }
+
+.play-roulette{
+  background: rgb(0,162,162); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0,162,162,1) 0%, rgba(0,116,116,1) 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,162,162,1)), color-stop(99%,rgba(0,116,116,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,162,162,1) 0%,rgba(0,116,116,1) 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,162,162,1) 0%,rgba(0,116,116,1) 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,162,162,1) 0%,rgba(0,116,116,1) 99%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,162,162,1) 0%,rgba(0,116,116,1) 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2a2', endColorstr='#007474',GradientType=0 ); /* IE6-9 */
+  padding:25px 20px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  cursor: pointer;
+  
+}
+
+.play-roulette:hover{text-decoration: none;}
+
+.play-roulette span{
+  background:url('/assets/icons/roulette-icon.png') no-repeat 0px 6px;
+  padding:12px 0 12px 70px;
+  color:#FFF;
+  text-shadow:1px 0px rgba(0,0,0,0.65);
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  top: 3px;
+}
+
+
 
 /* Tablets
 ============================================================ */
