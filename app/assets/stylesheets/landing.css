@@ -77,11 +77,53 @@
     line-height: 1.2em;
     padding-left: 40px;}
 
+.wrapper .top-content-preview .lead {
+    background: url("/assets/icons/user-circle.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.4em;
+    padding-left: 53px;
+}
 
 
-.copy-block-landing {
+
+.bottom-block-landing {
     display: inline-block;
     margin: 0 19px 0 45px;
     text-align: left;
     width: 330px;
+}
+
+
+.top-block-landing_1{
+ 	display: inline-block;
+    font-size: 18px;
+    left: 16px;
+    position: relative;
+    text-align: left;
+    top: -380px;
+    width: 201px;
+}
+
+.top-block-landing_2{
+   display: inline-block;
+     width: 460px;
+}
+
+.top-block-landing_3{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 15px;
+    position: relative;
+    text-align: justify;
+    top: -140px;
+    width: 246px;
+}
+
+.top-block-landing_3 h1{
+color: #FF2F43;
+font-size: 22px;
+
 }
