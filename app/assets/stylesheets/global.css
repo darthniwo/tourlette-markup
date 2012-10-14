@@ -820,6 +820,10 @@ ul.route li a img{
   margin: 3px 0 0 15px;
   display: block;
   font-size: 18px;
+  width:180px;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
 }
 
 .random-place .placemail,
@@ -944,6 +948,103 @@ a, label{
 #done{
   display: inline-block;
   margin-top: 30px;
+}
+
+/* Dashboard
+============================================================ */
+.dashboard-head{padding-top:20px;}
+.dashboard-head .img.rounded img {
+  height: 76px;
+  width: 76px;
+}
+.dashboard-head .media{
+  position: relative;
+
+}
+.dashboard-head .name + a,
+.dashboard-head .name{font-size: 16px;}
+.dashboard-head .media .body{padding-top:15px;}
+
+#dashboard{
+  background-color:#EDEDE7;
+  min-height: 500px;
+}
+
+.wrapper.stripe2,
+.container.stripe2{background:url('/assets/backgrounds/wrapper-stripe2.png') repeat-y top left;min-height: 500px;}
+
+#dashboard .side-content{
+  width:323px;
+  padding-bottom: 50px;
+  float:left;
+}
+
+#dashboard .main-content{
+  background-color:#FFF;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  float:right;
+  margin-top:20px;
+  padding:26px 20px;
+  width:686px;
+}
+
+.container{
+  width:1280px;
+  margin:0 auto;
+}
+
+.media.bordered{
+  padding:10px;
+  border-top:solid #CCC 1px;
+  border-bottom:solid #CCC 1px;
+}
+
+.side-content .media.bordered .body span{
+  color:#666;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  top:10px;
+}
+
+
+.side-content .visit{
+  margin:0 auto 20px;
+  width:270px;
+  position: relative;
+}
+
+.side-content .visit.done .pic img{
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
+} 
+
+.side-content .visit .done-img{
+  position: absolute;
+  top:20px;
+  right:0px;
+  z-index: 1;
+}
+
+.visit .placename{
+  display:block;
+  font-size: 18px;
+  font-weight: 400;
+  color:#666;
+  margin-bottom:5px;
+}
+
+.visit .address{
+  display:block;
+  font-size: 15px;
+  font-weight: 400;
+  color:#999;
+  margin-bottom:5px;
 }
 
 /* Footer

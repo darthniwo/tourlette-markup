@@ -1,0 +1,74 @@
+<% content_for :title do %>
+  Page Title
+<% end %>
+
+<div class="container dashboard-head push cf">
+	<h1 id="logo" class="push"><a href="/"> <img src="<%= image_path('logo.png')%>" alt=""></a></h1>
+	<div class="media right cf">
+		<div class="img rounded">
+			<img class="img-circle" src="<%= image_path('misc/user-pic1.jpg')%>" alt="">
+		</div>
+		<div class="body">
+			<span class="name">Manuel Perez</span>
+			<a href="mailto:manuel@gmail.com">manuel@gmail.com</a>
+			<div>
+				<a href="" class="logout"><img src="<%= image_path('icons/logout.png')%>" alt=""></a>
+				<a href="" class="edit"><img src="<%= image_path('icons/edit.png')%>" alt=""></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="dashboard" class="clear cf">
+	<div class="container stripe2">
+		<div class="side-content">
+			<div class="aligncenter push">
+				<a href=""><img src="<%= image_path('icons/activity-btn.png')%>" alt=""></a>
+				<a href=""><img src="<%= image_path('icons/profile-btn.png')%>" alt=""></a>
+			</div>
+			<div class="media bordered push">
+				<div class="img">
+					<img src="<%= image_path('icons/paperplane.png')%>" alt="">
+				</div>
+				<div class="body"><span class="title">Travel Activity</span> </div>
+			</div>
+
+			<div class="places-to-visit">
+
+				<div class="visit done">
+					<img class="done-img" src="<%= image_path('icons/place-done.jpg') %>" alt="">
+					<div class="pic">
+						<img src="<%= image_path('misc/visited-place.jpg') %>" alt="">
+					</div>
+					<span class="like-icon"></span>
+					<span class="likes">9</span>
+					<span class="placename">Restaurante El Cellar</span>
+					<span class="address">Calle 76 No 54-79</span>
+					<div class="rating"></div>
+				</div>
+
+				<div class="visit">
+					<img class="done-img" src="<%= image_path('icons/place-to-visit.png') %>" alt="">
+					<div class="pic">
+						<img src="<%= image_path('misc/visited-place.jpg') %>" alt="">
+					</div>
+					<span class="like-icon"></span>
+					<span class="likes">9</span>
+					<span class="placename">Restaurante El Cellar</span>
+					<span class="address">Calle 76 No 54-79</span>
+					<div class="rating"></div>
+				</div>
+
+			</div>
+
+		</div> <!-- end side content -->
+		<div class="main-content"></div> <!-- end main content -->
+	</div>
+</div>
+
+<% content_for :javascript do %>
+  <script>
+    $(function(){
+
+    });
+  </script>
+<% end %>
